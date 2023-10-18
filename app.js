@@ -10,6 +10,13 @@ app.get("/",(req,res)=>{
     })
 })
 
+app.get("/api",(req,res)=>{
+    res.status(200).send({
+        statu:true,
+        message: "App API is connected"
+    })
+})
+
 
 app.listen(Port, () => {
     console.log(`Server is running on port ${Port}`);
